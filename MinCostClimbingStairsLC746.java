@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class MinCostClimbingStairsLC746 {
 
     public int minCostClimbingStairs(int[] cost) {

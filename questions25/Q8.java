@@ -17,6 +17,6 @@ public class Q8 {
         else if (per >= 60)
             System.out.println("Grade: C");
         else
-            System.out.println("Fail");
+            System.out.println("Fail");sc.close();
     }
 }

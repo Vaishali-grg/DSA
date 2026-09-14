@@ -20,6 +20,6 @@ public class Q6 {
             bill = (100 * 5) + (100 * 7) + ((units - 200) * 10);
         }
 
-        System.out.println("Electricity Bill = " + bill);
+        System.out.println("Electricity Bill = " + bill);sc.close();
     }
 }

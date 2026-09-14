@@ -19,5 +19,6 @@ public class Q3 {
             System.out.println("Negative");
         else
             System.out.println("Zero");
+        sc.close();
     }
 }

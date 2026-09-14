@@ -21,5 +21,6 @@ public class Q4 {
         System.out.println("Total Marks = " + total);
         System.out.println("Percentage = " + per + "%");
         System.out.println("Average = " + avg);
+        sc.close();
     }
 }

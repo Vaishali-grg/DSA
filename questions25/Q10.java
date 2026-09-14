@@ -14,6 +14,6 @@ public class Q10 {
             fact = fact * i;
         }
 
-        System.out.println("Factorial = " + fact);
+        System.out.println("Factorial = " + fact);sc.close();
     }
 }

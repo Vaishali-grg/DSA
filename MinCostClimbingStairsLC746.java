@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class MinCostClimbingStairsLC746 {
 
-    public int minCostClimbingStairs(int[] cost) {
+    public static int minCostClimbingStairs(int[] cost) {
         return Math.min( solve(cost,0) ,  solve(cost,1));
         
     }
@@ -20,7 +20,7 @@ public class MinCostClimbingStairsLC746 {
             cost[i]=sc.nextInt();
         }
         System.out.print("Minimum cost : "+minCostClimbingStairs(cost));
-
+        sc.close();
     }
     
 }

@@ -24,5 +24,6 @@ public class Q5 {
             largest = c;
 
         System.out.println("Largest = " + largest);
+        sc.close();
     }
 }

@@ -19,6 +19,6 @@ public class Q11 {
             n = n / 10;
         }
 
-        System.out.println("Reverse = " + reverse);
+        System.out.println("Reverse = " + reverse);sc.close();
     }
 }

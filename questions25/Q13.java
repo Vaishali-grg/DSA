@@ -19,6 +19,6 @@ public class Q13 {
 
             a = b;
             b = c;
-        }
+        }sc.close();
     }
 }

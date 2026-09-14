@@ -23,6 +23,6 @@ public class Q12 {
         if (original == reverse)
             System.out.println("Palindrome");
         else
-            System.out.println("Not Palindrome");
+            System.out.println("Not Palindrome");sc.close();
     }
 }

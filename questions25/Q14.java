@@ -19,6 +19,6 @@ public class Q14 {
             n = n / 10;
         }
 
-        System.out.println("Sum = " + sum);
+        System.out.println("Sum = " + sum);sc.close();
     }
 }

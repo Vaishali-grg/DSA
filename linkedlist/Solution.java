@@ -1,6 +1,14 @@
 package linkedlist;
 
 public class Solution {
+    class ListNode {
+        int val;
+        ListNode next;
+        ListNode(int val) {
+            this.val = val;
+            this.next = null;
+        }
+    }
     public ListNode swapNodes(ListNode head, int k) {
         ListNode first = head;
         for (int i = 1; i < k; i++) {

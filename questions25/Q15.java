@@ -23,7 +23,7 @@ class Student {
         course = sc.nextLine();
 
         System.out.print("Enter marks: ");
-        marks = sc.nextDouble();
+        marks = sc.nextDouble();sc.close();
     }
 
     void displayDetails() {

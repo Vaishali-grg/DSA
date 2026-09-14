@@ -16,6 +16,6 @@ public class Q7 {
         } else {
 
             System.out.println("Not a Leap year");
-        }
+        }sc.close();
     }
 }

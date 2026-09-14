@@ -15,6 +15,6 @@ public class Q1 {
         System.out.println("Difference = " + (a - b));
         System.out.println("Product = " + (a * b));
         System.out.println("Quotient = " + (a / b));
-        System.out.println("Remainder = " + (a % b));
+        System.out.println("Remainder = " + (a % b));sc.close();
     }
 }

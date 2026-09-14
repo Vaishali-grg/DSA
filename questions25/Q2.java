@@ -21,6 +21,6 @@ public class Q2 {
 
         System.out.println("After swapping:");
         System.out.println("a = " + a);
-        System.out.println("b = " + b);
+        System.out.println("b = " + b);sc.close();
     }
 }

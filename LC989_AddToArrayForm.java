@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class AddToArrayForm {
+public class LC989_AddToArrayForm {
     class Solution {
         public List<Integer> addToArrayForm(int[] num, int k) {
             List<Integer> list = new ArrayList<>();

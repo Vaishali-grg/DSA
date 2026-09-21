@@ -1,6 +1,6 @@
 package linkedlist;
 
-public class ReverseInKGroups {
+public class LC0025_ReverseInKGroups {
     static class Node {
         int data;
         Node next;
@@ -10,35 +10,7 @@ public class ReverseInKGroups {
         }
     }
 
-    public static Node reverseKGroup(Node head, int k) {
-        Node curr = head;
-        Node prev = null;
-        Node next = null;
-        int count = 0;
-
-        // Check if there are at least k nodes left
-        Node temp = head;
-        for (int i = 0; i < k; i++) {
-            if (temp == null) return head;
-            temp = temp.next;
-        }
-
-        // Reverse first k nodes
-        while (curr != null && count < k) {
-            next = curr.next;
-            curr.next = prev;
-            prev = curr;
-            curr = next;
-            count++;
-        }
-
-        // Recursively reverse remaining groups
-        if (next != null) {
-            head.next = reverseKGroup(next, k);
-        }
-
-        return prev;
-    }
+    
 
     public static void print(Node head) {
         Node temp = head;
@@ -47,6 +19,42 @@ public class ReverseInKGroups {
             temp = temp.next;
         }
         System.out.println();
+    }
+    public static Node reverseKGroup(Node head, int k) {
+        if(k==1 || head==null || head.next==null )return head;
+
+        Node temp=head;
+        int length=0;
+        while(temp!=null){
+            temp=temp.next;
+            length++;
+        }
+        
+
+
+        Node dummy=new Node(-1);
+        dummy.next=head;
+        Node prevGrp=dummy;
+        Node curr=head;
+        while(length>=k){
+            Node grpHead=curr;
+            Node prev=null;
+            for(int i=0;i<k;i++){
+                Node fwd=curr.next;
+                curr.next=prev;
+                prev=curr;
+                curr=fwd;
+            }
+
+            prevGrp.next=prev;
+            grpHead.next=curr;
+
+            prevGrp=grpHead;
+            length-=k;
+        }
+        return dummy.next;
+        
+        
     }
 
     public static void main(String[] args) {
@@ -62,3 +70,4 @@ public class ReverseInKGroups {
         print(head); // Output: 2 -> 1 -> 4 -> 3 -> 6 -> 5
     }
 }
+

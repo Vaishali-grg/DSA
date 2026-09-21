@@ -1,4 +1,4 @@
-public class SerachInRotatedSortedArray {
+public class LC33_SerachInRotatedSortedArray {
 
     public int search(int[] nums, int target) {
         int left = 0;

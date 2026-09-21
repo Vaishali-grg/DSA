@@ -1,4 +1,4 @@
-public class FindFirstAndLastPositionInSortedArray {
+public class LC34_FindFirstAndLastPositionInSortedArray {
     
     public int[] searchRange(int[] nums, int target) {
         int[] result = {-1, -1};

@@ -17,8 +17,8 @@ class MyLinkedList {
     private int size;
 
     public MyLinkedList() {
-        head = new Node(-1); // Dummy head
-        tail = new Node(-1); // Dummy tail
+        head = new Node(-1); 
+        tail = new Node(-1); 
         head.next = tail;
         tail.prev = head;
         size = 0;
@@ -84,9 +84,9 @@ public class LeetCode707_DesignLinkedList {
         MyLinkedList myLinkedList = new MyLinkedList();
         myLinkedList.addAtHead(1);
         myLinkedList.addAtTail(3);
-        myLinkedList.addAtIndex(1, 2);    // linked list becomes 1->2->3
-        System.out.println(myLinkedList.get(1)); // returns 2
-        myLinkedList.deleteAtIndex(1);    // now the linked list is 1->3
-        System.out.println(myLinkedList.get(1)); // returns 3
+        myLinkedList.addAtIndex(1, 2);    
+        System.out.println(myLinkedList.get(1)); 
+        myLinkedList.deleteAtIndex(1);    
+        System.out.println(myLinkedList.get(1)); 
     }
 }
